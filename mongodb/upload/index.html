@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文件上传 | LCS</title>
+    <meta name="description" content="我的个人网站">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.jpg">
+  <script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?82f1d7da12a35266cc5d92a119c2a560";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+    
+    <link rel="preload" href="/assets/css/0.styles.2c492a8d.css" as="style"><link rel="preload" href="/assets/js/app.56545f7b.js" as="script"><link rel="preload" href="/assets/js/2.1a8508ed.js" as="script"><link rel="preload" href="/assets/js/33.737b1663.js" as="script"><link rel="prefetch" href="/assets/js/10.6d835fb5.js"><link rel="prefetch" href="/assets/js/11.9ea11b12.js"><link rel="prefetch" href="/assets/js/12.cf02b182.js"><link rel="prefetch" href="/assets/js/13.b96945d8.js"><link rel="prefetch" href="/assets/js/14.adb64255.js"><link rel="prefetch" href="/assets/js/15.2535317c.js"><link rel="prefetch" href="/assets/js/16.2d259236.js"><link rel="prefetch" href="/assets/js/17.b5711ff1.js"><link rel="prefetch" href="/assets/js/18.11abdf9d.js"><link rel="prefetch" href="/assets/js/19.9cf09acb.js"><link rel="prefetch" href="/assets/js/20.7ebd6a10.js"><link rel="prefetch" href="/assets/js/21.266df251.js"><link rel="prefetch" href="/assets/js/22.d48e1b92.js"><link rel="prefetch" href="/assets/js/23.5430ccfd.js"><link rel="prefetch" href="/assets/js/24.0ec3a731.js"><link rel="prefetch" href="/assets/js/25.9c2e0df1.js"><link rel="prefetch" href="/assets/js/26.98436f52.js"><link rel="prefetch" href="/assets/js/27.0f03dd44.js"><link rel="prefetch" href="/assets/js/28.d2f519d1.js"><link rel="prefetch" href="/assets/js/29.8d2237c4.js"><link rel="prefetch" href="/assets/js/3.efe92163.js"><link rel="prefetch" href="/assets/js/30.d30ef4a1.js"><link rel="prefetch" href="/assets/js/31.2cfff275.js"><link rel="prefetch" href="/assets/js/32.e868d89a.js"><link rel="prefetch" href="/assets/js/34.d1c073eb.js"><link rel="prefetch" href="/assets/js/35.da1187e6.js"><link rel="prefetch" href="/assets/js/36.c9175b48.js"><link rel="prefetch" href="/assets/js/37.d8c85e98.js"><link rel="prefetch" href="/assets/js/38.4c2e3abb.js"><link rel="prefetch" href="/assets/js/39.84dd9786.js"><link rel="prefetch" href="/assets/js/4.ba5c2cd7.js"><link rel="prefetch" href="/assets/js/40.50e789e4.js"><link rel="prefetch" href="/assets/js/41.48900aab.js"><link rel="prefetch" href="/assets/js/42.5356ec8a.js"><link rel="prefetch" href="/assets/js/43.132cdc78.js"><link rel="prefetch" href="/assets/js/44.e29a5b81.js"><link rel="prefetch" href="/assets/js/45.0b5c2cbf.js"><link rel="prefetch" href="/assets/js/46.33be0726.js"><link rel="prefetch" href="/assets/js/47.5d4be2a1.js"><link rel="prefetch" href="/assets/js/48.1e297779.js"><link rel="prefetch" href="/assets/js/49.801c295e.js"><link rel="prefetch" href="/assets/js/5.f0358cce.js"><link rel="prefetch" href="/assets/js/50.2fdbdf66.js"><link rel="prefetch" href="/assets/js/51.418414f4.js"><link rel="prefetch" href="/assets/js/6.c609fc90.js"><link rel="prefetch" href="/assets/js/7.725a5837.js"><link rel="prefetch" href="/assets/js/8.1b1a8ad4.js"><link rel="prefetch" href="/assets/js/9.b9eca668.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2c492a8d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LCS</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/" class="sidebar-heading clickable router-link-active"><span>VUE们</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/vue/" class="sidebar-link">vue</a></li><li><a href="/vue/axios/" class="sidebar-link">axios</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>vue-cli</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/vue/vuepress/" class="sidebar-link">vuepress</a></li><li><a href="/vue/vuex/" class="sidebar-link">Vuex</a></li><li><a href="/vue/components/" class="sidebar-link">该造轮子了</a></li><li><a href="/vue/qiankun/" class="sidebar-link">乾坤</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/git/" class="sidebar-link">git</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/css/" class="sidebar-link">css</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodejs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/mongodb/" class="sidebar-heading clickable router-link-active open"><span>MongoDB</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/mongodb/install/" class="sidebar-link">安装</a></li><li><a href="/mongodb/jwt/" class="sidebar-link">jsonwebtoken</a></li><li><a href="/mongodb/upload/" class="active sidebar-link">上传文件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/mongodb/schema/" class="sidebar-link">Schema</a></li><li><a href="/mongodb/Schema.Types.ObjectId.objectById/" class="sidebar-link">Schema.Types.ObjectId.objectById</a></li><li><a href="/mongodb/deploy/" class="sidebar-link">部署</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/encryption" class="sidebar-heading clickable"><span>加密</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="文件上传"><a href="#文件上传" class="header-anchor">#</a> 文件上传</h1> <h3 id="koa-bodyparser-使request-body能传输文件"><a href="#koa-bodyparser-使request-body能传输文件" class="header-anchor">#</a> koa-bodyparser 使request body能传输文件</h3> <p>koa-bodyparser 只支持json/from-data格式，不支持文件，所有我们要替换他，要用koa-body</p> <div class="language-npm extra-class"><pre class="language-text"><code>npm i --save koa-body
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// app index.js</span>
+<span class="token keyword">const</span> koaBody <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-body'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">koaBody</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	multipart<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>  <span class="token comment">//开启支持文件</span>
+	formidable<span class="token operator">:</span><span class="token punctuation">{</span>
+		uploadDir<span class="token operator">:</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">'/public/uploads'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  <span class="token comment">//设置保存路径</span>
+		keepExtensions<span class="token operator">:</span><span class="token boolean">true</span>   <span class="token comment">//设置保留文件后缀名</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//controller中</span>
+<span class="token keyword">class</span> <span class="token class-name">HomeCtl</span> <span class="token punctuation">{</span>
+	<span class="token function">index</span><span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token string">'&lt;h1&gt;这是主页1&lt;/h1&gt;'</span>
+	<span class="token punctuation">}</span>
+	<span class="token function">upload</span><span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">const</span> file <span class="token operator">=</span> ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>files<span class="token punctuation">.</span>file<span class="token punctuation">;</span>    <span class="token comment">//这个file就是htnml中 对input设置的name的值</span>
+		ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token string">&quot;lcs&quot;</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HomeCtl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <input name="file" type="file">
+这里的file就是对应ctx.require.files.file 的file,也是postman中设置from-data key参数名为flie
+</div> <h3 id="koa-static-可以用http请求访问文件"><a href="#koa-static-可以用http请求访问文件" class="header-anchor">#</a> koa-static 可以用http请求访问文件</h3> <p>搭建静态服务，可通过http请求访问文件</p> <div class="language-npm extra-class"><pre class="language-text"><code>npm i --save koa-static
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// app index.js</span>
+<span class="token keyword">const</span> koaStatic <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-static'</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token function">koaStatic</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mongodb/jwt/" class="prev">
+        jsonwebtoken
+      </a></span> <span class="next"><a href="/mongodb/schema/">
+        Schema
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.56545f7b.js" defer></script><script src="/assets/js/2.1a8508ed.js" defer></script><script src="/assets/js/33.737b1663.js" defer></script>
+  </body>
+</html>

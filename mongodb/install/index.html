@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mongodb的安装 | LCS</title>
+    <meta name="description" content="我的个人网站">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.jpg">
+  <script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?82f1d7da12a35266cc5d92a119c2a560";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+    
+    <link rel="preload" href="/assets/css/0.styles.2c492a8d.css" as="style"><link rel="preload" href="/assets/js/app.56545f7b.js" as="script"><link rel="preload" href="/assets/js/2.1a8508ed.js" as="script"><link rel="preload" href="/assets/js/28.d2f519d1.js" as="script"><link rel="prefetch" href="/assets/js/10.6d835fb5.js"><link rel="prefetch" href="/assets/js/11.9ea11b12.js"><link rel="prefetch" href="/assets/js/12.cf02b182.js"><link rel="prefetch" href="/assets/js/13.b96945d8.js"><link rel="prefetch" href="/assets/js/14.adb64255.js"><link rel="prefetch" href="/assets/js/15.2535317c.js"><link rel="prefetch" href="/assets/js/16.2d259236.js"><link rel="prefetch" href="/assets/js/17.b5711ff1.js"><link rel="prefetch" href="/assets/js/18.11abdf9d.js"><link rel="prefetch" href="/assets/js/19.9cf09acb.js"><link rel="prefetch" href="/assets/js/20.7ebd6a10.js"><link rel="prefetch" href="/assets/js/21.266df251.js"><link rel="prefetch" href="/assets/js/22.d48e1b92.js"><link rel="prefetch" href="/assets/js/23.5430ccfd.js"><link rel="prefetch" href="/assets/js/24.0ec3a731.js"><link rel="prefetch" href="/assets/js/25.9c2e0df1.js"><link rel="prefetch" href="/assets/js/26.98436f52.js"><link rel="prefetch" href="/assets/js/27.0f03dd44.js"><link rel="prefetch" href="/assets/js/29.8d2237c4.js"><link rel="prefetch" href="/assets/js/3.efe92163.js"><link rel="prefetch" href="/assets/js/30.d30ef4a1.js"><link rel="prefetch" href="/assets/js/31.2cfff275.js"><link rel="prefetch" href="/assets/js/32.e868d89a.js"><link rel="prefetch" href="/assets/js/33.737b1663.js"><link rel="prefetch" href="/assets/js/34.d1c073eb.js"><link rel="prefetch" href="/assets/js/35.da1187e6.js"><link rel="prefetch" href="/assets/js/36.c9175b48.js"><link rel="prefetch" href="/assets/js/37.d8c85e98.js"><link rel="prefetch" href="/assets/js/38.4c2e3abb.js"><link rel="prefetch" href="/assets/js/39.84dd9786.js"><link rel="prefetch" href="/assets/js/4.ba5c2cd7.js"><link rel="prefetch" href="/assets/js/40.50e789e4.js"><link rel="prefetch" href="/assets/js/41.48900aab.js"><link rel="prefetch" href="/assets/js/42.5356ec8a.js"><link rel="prefetch" href="/assets/js/43.132cdc78.js"><link rel="prefetch" href="/assets/js/44.e29a5b81.js"><link rel="prefetch" href="/assets/js/45.0b5c2cbf.js"><link rel="prefetch" href="/assets/js/46.33be0726.js"><link rel="prefetch" href="/assets/js/47.5d4be2a1.js"><link rel="prefetch" href="/assets/js/48.1e297779.js"><link rel="prefetch" href="/assets/js/49.801c295e.js"><link rel="prefetch" href="/assets/js/5.f0358cce.js"><link rel="prefetch" href="/assets/js/50.2fdbdf66.js"><link rel="prefetch" href="/assets/js/51.418414f4.js"><link rel="prefetch" href="/assets/js/6.c609fc90.js"><link rel="prefetch" href="/assets/js/7.725a5837.js"><link rel="prefetch" href="/assets/js/8.1b1a8ad4.js"><link rel="prefetch" href="/assets/js/9.b9eca668.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2c492a8d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LCS</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/" class="sidebar-heading clickable router-link-active"><span>VUE们</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/vue/" class="sidebar-link">vue</a></li><li><a href="/vue/axios/" class="sidebar-link">axios</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>vue-cli</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/vue/vuepress/" class="sidebar-link">vuepress</a></li><li><a href="/vue/vuex/" class="sidebar-link">Vuex</a></li><li><a href="/vue/components/" class="sidebar-link">该造轮子了</a></li><li><a href="/vue/qiankun/" class="sidebar-link">乾坤</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/git/" class="sidebar-link">git</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/css/" class="sidebar-link">css</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodejs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/mongodb/" class="sidebar-heading clickable router-link-active open"><span>MongoDB</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/mongodb/install/" class="active sidebar-link">安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mongodb/install/#免费的mongodb" class="sidebar-link">免费的mongoDB</a></li><li class="sidebar-sub-header"><a href="/mongodb/install/#mongooes链接mongodb" class="sidebar-link">Mongooes链接MongoDB</a></li><li class="sidebar-sub-header"><a href="/mongodb/install/#schema" class="sidebar-link">Schema</a></li><li class="sidebar-sub-header"><a href="/mongodb/install/#mongoose增删改查" class="sidebar-link">mongoose增删改查</a></li></ul></li><li><a href="/mongodb/jwt/" class="sidebar-link">jsonwebtoken</a></li><li><a href="/mongodb/upload/" class="sidebar-link">上传文件</a></li><li><a href="/mongodb/schema/" class="sidebar-link">Schema</a></li><li><a href="/mongodb/Schema.Types.ObjectId.objectById/" class="sidebar-link">Schema.Types.ObjectId.objectById</a></li><li><a href="/mongodb/deploy/" class="sidebar-link">部署</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/encryption" class="sidebar-heading clickable"><span>加密</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mongodb的安装"><a href="#mongodb的安装" class="header-anchor">#</a> mongodb的安装</h1> <p><strong>2020/06/27 23:32</strong></p> <h3 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h3> <p>新建两个目录</p> <ol><li>D:\mongodb\data</li> <li>D:\mongodb\log</li></ol> <p>新建文件mongod.log 在 D:\mongodb\log 下
+新建文件mongod.cfg</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//  D:\mongodb\mongod.log</span>
+systemLog<span class="token operator">:</span>
+    destination<span class="token operator">:</span> file
+    path<span class="token operator">:</span> <span class="token constant">D</span><span class="token operator">:</span>\mongodb\log\mongod<span class="token punctuation">.</span>log
+storage<span class="token operator">:</span>
+    dbPath<span class="token operator">:</span> <span class="token constant">D</span><span class="token operator">:</span>\mongodb\data\
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>MongoDB.log文件（不是目录文件，是file即txt转换而来的）
+否则  Error opening config file: Is a directory</p></div> <p>安装/卸载服务</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//在window安装服务</span>
+<span class="token comment">//找到mongod.cfg文件并打开它，发现最后有个 mp: 字符，将它删掉。</span>
+mongod <span class="token operator">--</span>config <span class="token string">&quot;D:\mongodb\bin\mongod.cfg&quot;</span>  <span class="token operator">--</span>install <span class="token operator">--</span>serviceName <span class="token string">&quot;MongoDB&quot;</span>
+
+<span class="token comment">//卸载服务</span>
+mongod<span class="token punctuation">.</span>exe <span class="token operator">--</span>remove <span class="token operator">--</span>serviceName <span class="token string">&quot;MongoDB&quot;</span>
+
+<span class="token comment">//删除服务</span>
+sc <span class="token keyword">delete</span> MongoDB
+</code></pre></div><p>3种方式启动服务</p> <ol><li><p>命令行直接运行
+mongod --dbpath D:\mongodb\data\db</p></li> <li><p>安装了服务</p></li></ol> <div class="language-js extra-class"><pre class="language-js"><code>net start MongoDB
+
+net stop MongoDB
+</code></pre></div><ol start="3"><li>批处理bat
+3.1</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>echo <span class="token string">&quot;MongoDB starting..........&quot;</span>
+mongod <span class="token operator">--</span>dbpath <span class="token constant">D</span><span class="token operator">:</span>\mongodb\data\db
+pause
+</code></pre></div><p>3.2</p> <div class="language-js extra-class"><pre class="language-js"><code>echo <span class="token string">&quot;MongoDB starting..........&quot;</span>
+net start MongoDB
+pause
+</code></pre></div><p>可能会因为不是管理员身份运行被拒绝，用管理员身份运行即可</p> <p>mongodb密码和传统数据如mysql等有些区别： mongodb的用户名和密码是基于特定数据库的，而不是基于整个系统的。所有所有数据库db都需要设置密码。</p> <h3 id="设置密码"><a href="#设置密码" class="header-anchor">#</a> 设置密码</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token operator">&gt;</span>mongo    <span class="token comment">#进入mongo环境    mongo --port 27017</span>
+<span class="token operator">&gt;</span>show dbs <span class="token comment">#查看db库</span>
+<span class="token operator">&gt;</span>use admin <span class="token comment">#切换到admin数据库</span>
+
+<span class="token comment">#user: 用户名, pwd: 用户密码,roles: 用来设置用户的权限，比如读，读写 等等</span>
+<span class="token operator">&gt;</span>db.createUser<span class="token punctuation">(</span><span class="token punctuation">{</span>user: <span class="token string">'root'</span>, pwd: <span class="token string">'123456'</span>, roles: <span class="token punctuation">[</span><span class="token string">'root'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">#验证是否添加成功</span>
+<span class="token comment">#如果返回 '1'表示验证成功， 如果是 '0' 表示验证失败...</span>
+<span class="token operator">&gt;</span>db.auth<span class="token punctuation">(</span><span class="token string">'root'</span>, <span class="token string">'123456'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 方式二</span>
+mongo admin -u admin -p <span class="token number">123456</span>
+
+
+<span class="token comment">#刚才是给root设置密码，现在要给特定的每个库设置权限，比如我这里有一个库，库名字叫做Article,这里以Article这个库为例</span>
+<span class="token operator">&gt;</span>db.createUser<span class="token punctuation">(</span><span class="token punctuation">{</span>user:<span class="token string">'lcs'</span>,pwd:<span class="token string">'123456'</span>,roles: <span class="token punctuation">[</span><span class="token punctuation">{</span>role:<span class="token string">'readWrite'</span>,db:<span class="token string">'test'</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+</code></pre></div><p>show users  // 查看当前库下的用户
+db.dropUser('testadmin')  // 删除用户
+db.updateUser('admin', {pwd: '654321'})  // 修改用户密码
+db.auth('admin', '654321')  // 密码认证</p> <p>MongoDB 数据库默认角色
+数据库用户角色：read、readWrite
+数据库管理角色：dbAdmin、dbOwner、userAdmin
+集群管理角色：clusterAdmin、clusterManager、clusterMonitor、hostManager
+备份恢复角色：backup、restore
+所有数据库角色： readAnyDatabase、readWriteAnyDatabase、userAdminAnyDatabase、
+dbAdminAnyDatabase
+超级用户角色：root</p> <h3 id="开启权限认证"><a href="#开启权限认证" class="header-anchor">#</a> 开启权限认证</h3> <p>如果是命令模式启动的话，就在原来的启动参数上，在加上 --auth 即可</p> <div class="language-shell extra-class"><pre class="language-shell"><code>c:<span class="token punctuation">\</span><span class="token operator">&gt;</span> mongod --auth --dbpath <span class="token string">&quot;D:\mongodb\data\db&quot;</span>
+</code></pre></div><p>如果是windows service方式运行的话，打开 mongo配置文件mongod.cfg,
+在security项下，将authorization设置为enabled, 默认是disabled</p> <div class="language-shell extra-class"><pre class="language-shell"><code>security:
+  authorization: enabled
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>注意那个authorization:后面有个空格，然后才是enabled</p></div> <h3 id="以认证的方式连接mongo"><a href="#以认证的方式连接mongo" class="header-anchor">#</a> 以认证的方式连接mongo</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>mongo -port <span class="token number">27017</span> -u <span class="token string">&quot;admin&quot;</span>  -p <span class="token string">&quot;123456&quot;</span> --authenticationDatabase <span class="token string">&quot;admin&quot;</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p style="color:red;">可以使用：mongodb://youruser:yourpassword2@localhost/yourdatabase 来连接到你的mongo</p></div> <h3 id="根据需要创建其他的账号"><a href="#根据需要创建其他的账号" class="header-anchor">#</a> 根据需要创建其他的账号</h3> <p>比如我有一个test库，我需要读写权限，然后有个game_report库，我需要只读权限, 然后我们就可以如下创建一个账号:</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token operator">&gt;</span> use admin
+switched to db admin
+<span class="token operator">&gt;</span> db.createUser<span class="token punctuation">(</span>
+<span class="token punctuation">..</span>. <span class="token punctuation">{</span>
+<span class="token punctuation">..</span>.  user <span class="token builtin class-name">:</span> <span class="token string">&quot;my_tester&quot;</span>,
+<span class="token punctuation">..</span>.  <span class="token builtin class-name">pwd</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;123456&quot;</span>,
+<span class="token punctuation">..</span>.  roles: <span class="token punctuation">[</span> <span class="token punctuation">{</span> role <span class="token builtin class-name">:</span> <span class="token string">&quot;readWrite&quot;</span>, db <span class="token builtin class-name">:</span> <span class="token string">&quot;test&quot;</span> <span class="token punctuation">}</span> ,
+<span class="token punctuation">..</span>.           <span class="token punctuation">{</span> role <span class="token builtin class-name">:</span> <span class="token string">&quot;read&quot;</span>, db <span class="token builtin class-name">:</span> <span class="token string">&quot;game_report&quot;</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span>
+<span class="token punctuation">..</span>. <span class="token punctuation">}</span>
+<span class="token punctuation">..</span>. <span class="token punctuation">)</span>
+Successfully added user: <span class="token punctuation">{</span>
+        <span class="token string">&quot;user&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;my_tester&quot;</span>,
+        <span class="token string">&quot;roles&quot;</span> <span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                        <span class="token string">&quot;role&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;readWrite&quot;</span>,
+                        <span class="token string">&quot;db&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;test&quot;</span>
+                <span class="token punctuation">}</span>,
+                <span class="token punctuation">{</span>
+                        <span class="token string">&quot;role&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;read&quot;</span>,
+                        <span class="token string">&quot;db&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;game_report&quot;</span>
+                <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以认证方式连接test库</p> <div class="language-shell extra-class"><pre class="language-shell"><code>C:<span class="token punctuation">\</span>Users<span class="token punctuation">\</span>xxx<span class="token operator">&gt;</span>mongo
+MongoDB shell version v4.0.1
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: <span class="token number">4.0</span>.1
+<span class="token operator">&gt;</span> use admin
+switched to db admin
+<span class="token operator">&gt;</span> db.auth<span class="token punctuation">(</span><span class="token string">&quot;my_tester&quot;</span>, <span class="token string">&quot;123456&quot;</span><span class="token punctuation">)</span>
+<span class="token number">1</span>
+<span class="token operator">&gt;</span> use <span class="token builtin class-name">test</span>
+switched to db <span class="token builtin class-name">test</span>
+<span class="token operator">&gt;</span> db.foo.insert<span class="token punctuation">(</span> <span class="token punctuation">{</span> x <span class="token builtin class-name">:</span> <span class="token number">1</span>, y <span class="token builtin class-name">:</span> <span class="token number">2</span> <span class="token punctuation">}</span> <span class="token punctuation">)</span>
+WriteResult<span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token string">&quot;nInserted&quot;</span> <span class="token builtin class-name">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;</span> db.foo.<span class="token function-name function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span> <span class="token string">&quot;_id&quot;</span> <span class="token builtin class-name">:</span> ObjectId<span class="token punctuation">(</span><span class="token string">&quot;5b67fc008bd89ebd4abc54aa&quot;</span><span class="token punctuation">)</span>, <span class="token string">&quot;x&quot;</span> <span class="token builtin class-name">:</span> <span class="token number">1</span>, <span class="token string">&quot;y&quot;</span> <span class="token builtin class-name">:</span> <span class="token number">2</span> <span class="token punctuation">}</span>
+<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="权限说明（基于角色的权限控制）"><a href="#权限说明（基于角色的权限控制）" class="header-anchor">#</a> 权限说明（基于角色的权限控制）</h3> <p>内置角色
+数据库用户角色
+read: 只读数据权限
+readWrite:学些数据权限</p> <p>数据库管理角色
+dbAdmin: 在当前db中执行管理操作的权限
+dbOwner: 在当前db中执行任意操作
+userADmin: 在当前db中管理user的权限</p> <p>备份和还原角色
+backup
+restore</p> <p>夸库角色
+readAnyDatabase: 在所有数据库上都有读取数据的权限
+readWriteAnyDatabase: 在所有数据库上都有读写数据的权限
+userAdminAnyDatabase: 在所有数据库上都有管理user的权限
+dbAdminAnyDatabase: 管理所有数据库的权限</p> <p>集群管理
+clusterAdmin: 管理机器的最高权限
+clusterManager: 管理和监控集群的权限
+clusterMonitor: 监控集群的权限
+hostManager: 管理Server</p> <p>超级权限
+root: 超级用户</p> <h1 id="mongodb"><a href="#mongodb" class="header-anchor">#</a> MongoDB</h1> <p>本节内容</p> <ol><li>mongodb官网免费的数据库</li> <li>使用Mongooes链接MongoDB</li> <li>用mongoose来对mongodb的增删改查</li></ol> <h2 id="免费的mongodb"><a href="#免费的mongodb" class="header-anchor">#</a> 免费的mongoDB</h2> <p>mongodb官网 Atlas
+创建集群，创建用户，设置ip白名单(0.0.0.0/0 全部可以访问)
+链接数据库 Connect to LCSDB  --&gt;  Connect your application  看到字符串就是链接mongodb的地址</p> <h2 id="mongooes链接mongodb"><a href="#mongooes链接mongodb" class="header-anchor">#</a> Mongooes链接MongoDB</h2> <p>安装mongoose</p> <div class="language-js extra-class"><pre class="language-js"><code>npm i mongoose <span class="token operator">--</span>save
+</code></pre></div><p>链接到云mongodb</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongoose'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+mongoose<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token string">'.....那条字符串'</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'mongodb 链接成功'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">//链接成功提示</span>
+
+mongoose<span class="token punctuation">.</span>connecttion<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span>console<span class="token punctuation">.</span>error<span class="token punctuation">)</span>  <span class="token comment">//链接失败提示</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <div class="language- extra-class"><pre class="language-text"><code>mongodb+srv://admin:&lt;password&gt;@lcsdb-chekw.mongodb.net/test?retryWrites=true&amp;w=majority
+</code></pre></div><p>记得改密码</p></div> <h2 id="schema"><a href="#schema" class="header-anchor">#</a> Schema</h2> <p>mongodb不是没有表结构么，这里的schema指的是json的schema</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// app/modules/user.js</span>
+<span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongoose'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span>Schema<span class="token punctuation">,</span>model<span class="token punctuation">}</span> <span class="token operator">=</span> mongoose<span class="token punctuation">;</span>
+
+<span class="token comment">// 设计用户Schema</span>
+<span class="token keyword">const</span> userSchema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	name<span class="token operator">:</span><span class="token punctuation">{</span>type<span class="token operator">:</span>String<span class="token punctuation">,</span>require<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//用Schema生成模型，用来实现增删改查</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'User'</span><span class="token punctuation">,</span>userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token comment">//model('文档集合名称',Schema)   导出的是个类，然后有find，等增删改查了</span>
+</code></pre></div><h2 id="mongoose增删改查"><a href="#mongoose增删改查" class="header-anchor">#</a> mongoose增删改查</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//在controller种引用model</span>
+<span class="token keyword">const</span> Users <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../models/users.js'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">UsersCtl</span><span class="token punctuation">{</span>
+	<span class="token keyword">async</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token keyword">await</span> Users<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">async</span> <span class="token function">findById</span><span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">try</span><span class="token punctuation">{</span>
+			<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> Users<span class="token punctuation">.</span><span class="token function">findById</span><span class="token punctuation">(</span>ctx<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> user<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">{</span>
+			ctx<span class="token punctuation">.</span><span class="token function">throw</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">,</span><span class="token string">'用户不存在'</span><span class="token punctuation">)</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment">//if(!user) {ctx.throw(404,'用户不存在')}</span>
+		<span class="token comment">//ctx.body = user;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">async</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		ctx<span class="token punctuation">.</span><span class="token function">verifyParams</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+			name<span class="token operator">:</span><span class="token punctuation">{</span>type<span class="token operator">:</span><span class="token string">'string'</span><span class="token punctuation">,</span>required<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">new</span> <span class="token class-name">Users</span><span class="token punctuation">(</span>ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>user<span class="token punctuation">)</span>
+		ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> user<span class="token punctuation">;</span>  <span class="token comment">//这里数据库会自动生成id，所以返回值立会带有id属性</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">async</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">try</span><span class="token punctuation">{</span>
+			ctx<span class="token punctuation">.</span><span class="token function">verifyParams</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+				name<span class="token operator">:</span><span class="token punctuation">{</span>type<span class="token operator">:</span><span class="token string">'string'</span><span class="token punctuation">,</span>required<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">)</span>
+			<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> Users<span class="token punctuation">.</span><span class="token function">findByIdAndUpdate</span><span class="token punctuation">(</span>ctx<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id<span class="token punctuation">,</span>ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> user<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">{</span>
+			ctx<span class="token punctuation">.</span><span class="token function">throw</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">,</span><span class="token string">'用户不存在'</span><span class="token punctuation">)</span>
+		<span class="token punctuation">}</span>
+		
+	<span class="token punctuation">}</span>
+	<span class="token keyword">async</span> <span class="token function">deleteUser</span><span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">try</span><span class="token punctuation">{</span>
+			<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> Users<span class="token punctuation">.</span><span class="token function">findByIdAndRemove</span><span class="token punctuation">(</span>ctx<span class="token punctuation">.</span>params<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			ctx<span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token number">204</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">{</span>
+			ctx<span class="token punctuation">.</span><span class="token function">throw</span><span class="token punctuation">(</span><span class="token number">404</span><span class="token punctuation">,</span><span class="token string">'用户不存在'</span><span class="token punctuation">)</span>
+		<span class="token punctuation">}</span>
+		
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UsersCtl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><p>models/user.js</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> mongoose <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'mongoose'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span>Schema<span class="token punctuation">,</span>model<span class="token punctuation">}</span> <span class="token operator">=</span> mongoose<span class="token punctuation">;</span>
+
+<span class="token comment">// 设计用户Schema</span>
+<span class="token keyword">const</span> userSchema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	name<span class="token operator">:</span><span class="token punctuation">{</span>type<span class="token operator">:</span>String<span class="token punctuation">,</span>require<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//用Schema生成模型，用来实现增删改查</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'Users'</span><span class="token punctuation">,</span>userSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+</code></pre></div><p>routes/users.js</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> Router <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-router'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Router</span><span class="token punctuation">(</span><span class="token punctuation">{</span>prefix<span class="token operator">:</span><span class="token string">'/users'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span>find<span class="token punctuation">,</span>create<span class="token punctuation">,</span>findById<span class="token punctuation">,</span>update<span class="token punctuation">,</span>deleteUser<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../controllers/users'</span><span class="token punctuation">)</span>
+router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span>find<span class="token punctuation">)</span><span class="token punctuation">;</span>
+router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span>create<span class="token punctuation">)</span><span class="token punctuation">;</span>
+router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/:id'</span><span class="token punctuation">,</span>findById<span class="token punctuation">)</span><span class="token punctuation">;</span>
+router<span class="token punctuation">.</span><span class="token function">patch</span><span class="token punctuation">(</span><span class="token string">'/:id'</span><span class="token punctuation">,</span>update<span class="token punctuation">)</span><span class="token punctuation">;</span>
+router<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token string">'/:id'</span><span class="token punctuation">,</span>deleteUser<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> router<span class="token punctuation">;</span>  <span class="token comment">//导出实例</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/nodejs/egg/" class="prev">
+        egg
+      </a></span> <span class="next"><a href="/mongodb/jwt/">
+        jsonwebtoken
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.56545f7b.js" defer></script><script src="/assets/js/2.1a8508ed.js" defer></script><script src="/assets/js/28.d2f519d1.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>egg | LCS</title>
+    <meta name="description" content="我的个人网站">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.jpg">
+  <script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?82f1d7da12a35266cc5d92a119c2a560";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+    
+    <link rel="preload" href="/assets/css/0.styles.2c492a8d.css" as="style"><link rel="preload" href="/assets/js/app.56545f7b.js" as="script"><link rel="preload" href="/assets/js/2.1a8508ed.js" as="script"><link rel="preload" href="/assets/js/34.d1c073eb.js" as="script"><link rel="prefetch" href="/assets/js/10.6d835fb5.js"><link rel="prefetch" href="/assets/js/11.9ea11b12.js"><link rel="prefetch" href="/assets/js/12.cf02b182.js"><link rel="prefetch" href="/assets/js/13.b96945d8.js"><link rel="prefetch" href="/assets/js/14.adb64255.js"><link rel="prefetch" href="/assets/js/15.2535317c.js"><link rel="prefetch" href="/assets/js/16.2d259236.js"><link rel="prefetch" href="/assets/js/17.b5711ff1.js"><link rel="prefetch" href="/assets/js/18.11abdf9d.js"><link rel="prefetch" href="/assets/js/19.9cf09acb.js"><link rel="prefetch" href="/assets/js/20.7ebd6a10.js"><link rel="prefetch" href="/assets/js/21.266df251.js"><link rel="prefetch" href="/assets/js/22.d48e1b92.js"><link rel="prefetch" href="/assets/js/23.5430ccfd.js"><link rel="prefetch" href="/assets/js/24.0ec3a731.js"><link rel="prefetch" href="/assets/js/25.9c2e0df1.js"><link rel="prefetch" href="/assets/js/26.98436f52.js"><link rel="prefetch" href="/assets/js/27.0f03dd44.js"><link rel="prefetch" href="/assets/js/28.d2f519d1.js"><link rel="prefetch" href="/assets/js/29.8d2237c4.js"><link rel="prefetch" href="/assets/js/3.efe92163.js"><link rel="prefetch" href="/assets/js/30.d30ef4a1.js"><link rel="prefetch" href="/assets/js/31.2cfff275.js"><link rel="prefetch" href="/assets/js/32.e868d89a.js"><link rel="prefetch" href="/assets/js/33.737b1663.js"><link rel="prefetch" href="/assets/js/35.da1187e6.js"><link rel="prefetch" href="/assets/js/36.c9175b48.js"><link rel="prefetch" href="/assets/js/37.d8c85e98.js"><link rel="prefetch" href="/assets/js/38.4c2e3abb.js"><link rel="prefetch" href="/assets/js/39.84dd9786.js"><link rel="prefetch" href="/assets/js/4.ba5c2cd7.js"><link rel="prefetch" href="/assets/js/40.50e789e4.js"><link rel="prefetch" href="/assets/js/41.48900aab.js"><link rel="prefetch" href="/assets/js/42.5356ec8a.js"><link rel="prefetch" href="/assets/js/43.132cdc78.js"><link rel="prefetch" href="/assets/js/44.e29a5b81.js"><link rel="prefetch" href="/assets/js/45.0b5c2cbf.js"><link rel="prefetch" href="/assets/js/46.33be0726.js"><link rel="prefetch" href="/assets/js/47.5d4be2a1.js"><link rel="prefetch" href="/assets/js/48.1e297779.js"><link rel="prefetch" href="/assets/js/49.801c295e.js"><link rel="prefetch" href="/assets/js/5.f0358cce.js"><link rel="prefetch" href="/assets/js/50.2fdbdf66.js"><link rel="prefetch" href="/assets/js/51.418414f4.js"><link rel="prefetch" href="/assets/js/6.c609fc90.js"><link rel="prefetch" href="/assets/js/7.725a5837.js"><link rel="prefetch" href="/assets/js/8.1b1a8ad4.js"><link rel="prefetch" href="/assets/js/9.b9eca668.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2c492a8d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LCS</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/" class="sidebar-heading clickable router-link-active"><span>VUE们</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/vue/" class="sidebar-link">vue</a></li><li><a href="/vue/axios/" class="sidebar-link">axios</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>vue-cli</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/vue/vuepress/" class="sidebar-link">vuepress</a></li><li><a href="/vue/vuex/" class="sidebar-link">Vuex</a></li><li><a href="/vue/components/" class="sidebar-link">该造轮子了</a></li><li><a href="/vue/qiankun/" class="sidebar-link">乾坤</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/git/" class="sidebar-link">git</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/css/" class="sidebar-link">css</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>nodejs</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/nodejs/koa" class="sidebar-heading clickable open"><span>koa</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/nodejs/koa/dir/" class="sidebar-link">dir</a></li><li><a href="/nodejs/koa/error/" class="sidebar-link">异常处理</a></li><li><a href="/nodejs/koa/parameter/" class="sidebar-link">校验参数</a></li></ul></section></li><li><a href="/nodejs/rest/" class="sidebar-link">rest</a></li><li><a href="/nodejs/egg/" class="active sidebar-link">egg</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nodejs/egg/#cpu密集型-vs-io密集型" class="sidebar-link">CPU密集型 vs IO密集型</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nodejs/egg/#io密集型" class="sidebar-link">IO密集型</a></li><li class="sidebar-sub-header"><a href="/nodejs/egg/#启程" class="sidebar-link">启程</a></li></ul></li><li class="sidebar-sub-header"><a href="/nodejs/egg/#设置允许跨域" class="sidebar-link">设置允许跨域</a></li><li class="sidebar-sub-header"><a href="/nodejs/egg/#获取参数" class="sidebar-link">获取参数</a></li><li class="sidebar-sub-header"><a href="/nodejs/egg/#设置响应头" class="sidebar-link">设置响应头</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/nodejs/egg/#多人协同开发router" class="sidebar-link">多人协同开发router</a></li><li class="sidebar-sub-header"><a href="/nodejs/egg/#egg中的mogodb" class="sidebar-link">egg中的mogodb</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/mongodb/" class="sidebar-heading clickable"><span>MongoDB</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/encryption" class="sidebar-heading clickable"><span>加密</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="egg"><a href="#egg" class="header-anchor">#</a> egg</h1> <p>egg继承koa,与相对express，更灵活可扩展，没有选择社区常见框架的大集市模式（集成如数据库、模板引擎、前端框架等功能）</p> <p>但他们都是属于nodejs范畴的，单线程异步非阻塞模式。
+nodejs真的是单线程吗？其实只有js执行是单线程，I/O显然是其它线程。
+即只使用cup单核处理任务。不过单核也是可以支持高并发，还很六的那种。</p> <h2 id="cpu密集型-vs-io密集型"><a href="#cpu密集型-vs-io密集型" class="header-anchor">#</a> CPU密集型 vs IO密集型</h2> <h4 id="cpu密集型"><a href="#cpu密集型" class="header-anchor">#</a> CPU密集型</h4> <p>计算密集型任务的特点是要进行大量的计算，消耗CPU资源，比如计算圆周率、对视频进行高清解码等等，全靠CPU的运算能力。
+这种计算密集型任务虽然也可以用多任务完成，但是任务越多，花在任务切换的时间就越多，CPU执行任务的效率就越低，
+所以，要最高效地利用CPU，计算密集型任务同时进行的数量应当等于CPU的核心数。</p> <p>计算密集型任务由于主要消耗CPU资源，因此，代码运行效率至关重要。
+Python这样的脚本语言运行效率很低，完全不适合计算密集型任务。
+对于计算密集型任务，最好用C语言编写。</p> <h3 id="io密集型"><a href="#io密集型" class="header-anchor">#</a> IO密集型</h3> <p>涉及到网络、磁盘IO的任务都是IO密集型任务，这类任务的特点是CPU消耗很少，任务的大部分时间都在等待IO操作完成（因为IO的速度远远低于CPU和内存的速度）。
+对于IO密集型任务，任务越多，CPU效率越高，但也有一个限度。常见的大部分任务都是IO密集型任务，比如Web应用。</p> <p>IO密集型任务执行期间，99%的时间都花在IO上，花在CPU上的时间很少，因此，用运行速度极快的C语言替换用Python这样运行速度极低的脚本语言，
+完全无法提升运行效率。对于IO密集型任务，最合适的语言就是开发效率最高（代码量最少）的语言，脚本语言是首选，C语言最差。</p> <p>总之，计算密集型程序适合C语言多线程，I/O密集型适合脚本语言开发的多线程。</p> <p style="color:red;">所有egg做数据展示web应用的后端，够了</p> <h3 id="启程"><a href="#启程" class="header-anchor">#</a> 启程</h3> <div class="language-js extra-class"><pre class="language-js"><code>$ mkdir egg<span class="token operator">-</span>example <span class="token operator">&amp;&amp;</span> cd egg<span class="token operator">-</span>example
+$ npm init egg <span class="token operator">--</span>type<span class="token operator">=</span>simple
+$ npm i
+
+$ npm run dev
+$ open http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">7001</span>
+</code></pre></div><h2 id="设置允许跨域"><a href="#设置允许跨域" class="header-anchor">#</a> 设置允许跨域</h2> <div class="language-npm extra-class"><pre class="language-text"><code>npm install  egg-cors --save
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//  config/plugin.js</span>
+exports<span class="token punctuation">.</span>cors<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enable<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token keyword">package</span><span class="token operator">:</span> <span class="token string">'egg-cors'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//  config/config.default.js</span>
+config<span class="token punctuation">.</span>security <span class="token operator">=</span> <span class="token punctuation">{</span>
+　　csrf<span class="token operator">:</span> <span class="token punctuation">{</span>
+　　　　　enable<span class="token operator">:</span> <span class="token boolean">false</span>
+　　<span class="token punctuation">}</span><span class="token punctuation">,</span>
+　　domainWhiteList<span class="token operator">:</span> <span class="token punctuation">[</span> <span class="token string">'*'</span> <span class="token punctuation">]</span>   <span class="token comment">//[ 'http://localhost:3000' ]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+config<span class="token punctuation">.</span>cors <span class="token operator">=</span> <span class="token punctuation">{</span>
+    origin<span class="token operator">:</span> <span class="token string">'*'</span><span class="token punctuation">,</span>
+    allowMethods<span class="token operator">:</span> <span class="token string">'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="获取参数"><a href="#获取参数" class="header-anchor">#</a> 获取参数</h2> <ol><li>query</li> <li>queries</li> <li>Router params</li> <li>body</li></ol> <p>query
+在 URL 中 ?后面的部分是一个 Query String，这一部分经常用于 GET 类型的请求中传递参数。
+<em>GET /search?name=egg&amp;age=26</em>中<em>name=egg&amp;age=26</em>就是用户传递过来的参数</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span><span class="token function-variable function">exports</span> <span class="token operator">=</span> <span class="token parameter">app</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">class</span> <span class="token class-name">SearchController</span> <span class="token keyword">extends</span> <span class="token class-name">app<span class="token punctuation">.</span>Controller</span> <span class="token punctuation">{</span>
+    <span class="token operator">*</span> <span class="token function">search</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      <span class="token keyword">const</span> queryObj <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span>query<span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>queryObj<span class="token punctuation">.</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>queryObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">//打印结果：{ name: 'egg', age: '26' }</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> SearchController<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>有时候我们的系统会设计成让用户传递相同的 key，
+例如 <em>GET /posts?category=egg&amp;id=1&amp;id=2&amp;id=3</em>针对此类情况，框架提供了 context.queries 对象，
+这个对象也解析了 Query String，但是它不会丢弃任何一个重复的数据，而是将他们都放到一个数组中</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// GET /posts?category=egg&amp;id=1&amp;id=2&amp;id=3</span>
+<span class="token keyword">const</span> Controller <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'egg'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Controller<span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">class</span> <span class="token class-name">PostController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span> <span class="token punctuation">{</span>
+  <span class="token operator">*</span> <span class="token function">listPosts</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span>queries<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//result:</span>
+    <span class="token comment">// {</span>
+    <span class="token comment">//   category: [ 'egg' ],</span>
+    <span class="token comment">//   id: [ '1', '2', '3' ],</span>
+    <span class="token comment">// }</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>Router params</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// app.get('/projects/:projectId/app/:appId', 'app.listApp');</span>
+<span class="token comment">// GET /projects/1/app/2</span>
+
+<span class="token keyword">const</span> Controller <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'egg'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Controller<span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">class</span> <span class="token class-name">AppController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span> <span class="token punctuation">{</span>
+    <span class="token operator">*</span> <span class="token function">listApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    assert<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span>params<span class="token punctuation">.</span>projectId<span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    assert<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span>params<span class="token punctuation">.</span>appId<span class="token punctuation">,</span> <span class="token string">'2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>body
+框架内置了 bodyParser 中间件</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// {&quot;title&quot;: &quot;controller&quot;, &quot;content&quot;: &quot;what is controller&quot;}</span>
+<span class="token keyword">const</span> Controller <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'egg'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>Controller<span class="token punctuation">;</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">class</span> <span class="token class-name">PostController</span> <span class="token keyword">extends</span> <span class="token class-name">Controller</span> <span class="token punctuation">{</span>
+  <span class="token operator">*</span> <span class="token function">listPosts</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    assert<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>body<span class="token punctuation">.</span>title<span class="token punctuation">,</span> <span class="token string">'controller'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    assert<span class="token punctuation">.</span><span class="token function">equal</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>body<span class="token punctuation">.</span>content<span class="token punctuation">,</span> <span class="token string">'what is controller'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>框架对 bodyParser 设置了一些默认参数，配置好之后拥有以下特性：</p> <p>当请求的 Content-Type 为 application/json，application/json-patch+json，application/vnd.api+json 和 application/csp-report 时，会按照 json格式对请求 body 进行解析，并限制 body 最大长度为 100kb。
+当请求的 Content-Type 为 application/x-www-form-urlencoded 时，会按照 form 格式对请求 body 进行解析，并限制 body 最大长度为 100kb。
+如果解析成功，body 一定会是一个 Object（可能是一个数组）。</p> <p>config/config.default.js中覆盖框架的默认值</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  bodyParser<span class="token operator">:</span> <span class="token punctuation">{</span>
+    jsonLimit<span class="token operator">:</span> <span class="token string">'1mb'</span><span class="token punctuation">,</span>
+    formLimit<span class="token operator">:</span> <span class="token string">'1mb'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="设置响应头"><a href="#设置响应头" class="header-anchor">#</a> 设置响应头</h2> <p>ctx.set('Content-Type', 'application/zip')</p> <p>添加请求头：</p> <p>ctx.append('userName','111111');</p> <h3 id="多人协同开发router"><a href="#多人协同开发router" class="header-anchor">#</a> 多人协同开发router</h3> <p>人多的时候各自一个文件维护router，就像saas-admin维护api，view那样挺好的</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//router/index.js</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">fn</span> <span class="token operator">=</span> <span class="token parameter">app</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    fs<span class="token punctuation">.</span><span class="token function">readdirSync</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">file</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>file <span class="token operator">===</span> <span class="token string">'index.js'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token keyword">return</span> <span class="token punctuation">;</span><span class="token punctuation">}</span>
+        <span class="token keyword">const</span> route <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">./</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>file<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">route</span><span class="token punctuation">(</span>app<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> fn<span class="token punctuation">;</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//router.js</span>
+
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./router/index.js'</span><span class="token punctuation">)</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> router<span class="token punctuation">;</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// router/home.js</span>
+<span class="token keyword">const</span> <span class="token function-variable function">fn</span> <span class="token operator">=</span> <span class="token parameter">app</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span> router<span class="token punctuation">,</span> controller <span class="token punctuation">}</span> <span class="token operator">=</span> app<span class="token punctuation">;</span>
+    router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> controller<span class="token punctuation">.</span>home<span class="token punctuation">.</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> fn<span class="token punctuation">;</span>
+</code></pre></div><p>** 2020/06/28 **</p> <h3 id="egg中的mogodb"><a href="#egg中的mogodb" class="header-anchor">#</a> egg中的mogodb</h3> <p>安装egg-cors模块</p> <div class="language-npm extra-class"><pre class="language-text"><code>npm i egg-cors --save-dev
+</code></pre></div><p>在 /config/plugin.js里面添加跨域插件</p> <div class="language-npm extra-class"><pre class="language-text"><code>exports.cors = {
+    enable: true,
+    package: 'egg-cors',
+};
+</code></pre></div><p>在 /config/config.default.js 添加以下代码</p> <div class="language-shell extra-class"><pre class="language-shell"><code>  config.cors <span class="token operator">=</span> <span class="token punctuation">{</span>
+      origin: <span class="token string">'*'</span>, // 访问白名单,根据你自己的需要进行设置
+      allowMethods: <span class="token string">'GET,HEAD,PUT,POST,DELETE,PATCH'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>配置mogosse</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">npm</span> <span class="token function">install</span> egg-mongoose --save
+</code></pre></div><p>【可测试是否安装好mongo】</p> <div class="language-shell extra-class"><pre class="language-shell"><code>const mongoose <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">'mongoose'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mongoose.connect<span class="token punctuation">(</span><span class="token string">'mongodb://132.232.87.95:27017/test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+const con <span class="token operator">=</span> mongoose.connection<span class="token punctuation">;</span>
+con.on<span class="token punctuation">(</span><span class="token string">'error'</span>, console.error.bind<span class="token punctuation">(</span>console, <span class="token string">'连接数据库失败'</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+con.once<span class="token punctuation">(</span><span class="token string">'open'</span>, <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  console.log<span class="token punctuation">(</span><span class="token string">'连接成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-shell extra-class"><pre class="language-shell"><code>// config/plugin.js
+exports.mongoose <span class="token operator">=</span> <span class="token punctuation">{</span>
+    enable: true,
+    package: <span class="token string">'egg-mongoose'</span>,
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+// config/config.default.js
+config.mongoose <span class="token operator">=</span> <span class="token punctuation">{</span>
+    url: <span class="token string">'mongodb://你的mongodb地址/apiExample'</span>,
+    options: <span class="token punctuation">{</span><span class="token punctuation">}</span>,
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>/model/user.js</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+module.exports <span class="token operator">=</span> app <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  const mongoose <span class="token operator">=</span> app.mongoose<span class="token punctuation">;</span>
+  const Schema <span class="token operator">=</span> mongoose.Schema<span class="token punctuation">;</span>
+
+  const UserSchema <span class="token operator">=</span> new Schema<span class="token punctuation">(</span><span class="token punctuation">{</span>
+    userName: <span class="token punctuation">{</span>
+      type: String,
+      unique: false,   //唯一索引  要是true了，userName就不能有重复的值了
+      required: true,
+    <span class="token punctuation">}</span>,
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token builtin class-name">return</span> mongoose.model<span class="token punctuation">(</span><span class="token string">'User'</span>, UserSchema<span class="token punctuation">)</span><span class="token punctuation">;</span>   
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>mongoose.model('User', UserSchema) </p><p style="color:red;">这里mongodb会自动新建collection users</p><p></p></div> <p>/service/user.js</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+const Service <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">'egg'</span><span class="token punctuation">)</span>.Service<span class="token punctuation">;</span>
+class UserService extends Service <span class="token punctuation">{</span>
+  // 更新用户信息
+  async <span class="token function-name function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    const <span class="token punctuation">{</span>
+      ctx,
+    <span class="token punctuation">}</span> <span class="token operator">=</span> this<span class="token punctuation">;</span>
+    const result <span class="token operator">=</span> await ctx.model.User.create<span class="token punctuation">(</span><span class="token punctuation">{</span>
+      userName: <span class="token string">'huruqing'</span>,
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token builtin class-name">return</span> result<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+module.exports <span class="token operator">=</span> UserService<span class="token punctuation">;</span>
+
+</code></pre></div><p>/controller/user.js</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token string">'use strict'</span><span class="token punctuation">;</span>
+
+const Controller <span class="token operator">=</span> require<span class="token punctuation">(</span><span class="token string">'egg'</span><span class="token punctuation">)</span>.Controller<span class="token punctuation">;</span>
+
+class UserController extends Controller <span class="token punctuation">{</span>
+  async <span class="token function-name function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    this.ctx.body <span class="token operator">=</span> await this.ctx.service.user.add<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module.exports <span class="token operator">=</span> UserController<span class="token punctuation">;</span>
+</code></pre></div><p>添加路由</p> <div class="language-shell extra-class"><pre class="language-shell"><code>router.get<span class="token punctuation">(</span><span class="token string">'/user/add'</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/nodejs/rest/" class="prev">
+        rest
+      </a></span> <span class="next"><a href="/mongodb/install/">
+        安装
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.56545f7b.js" defer></script><script src="/assets/js/2.1a8508ed.js" defer></script><script src="/assets/js/34.d1c073eb.js" defer></script>
+  </body>
+</html>

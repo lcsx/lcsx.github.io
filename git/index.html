@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git | LCS</title>
+    <meta name="description" content="我的个人网站">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.jpg">
+  <script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?82f1d7da12a35266cc5d92a119c2a560";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+    
+    <link rel="preload" href="/assets/css/0.styles.2c492a8d.css" as="style"><link rel="preload" href="/assets/js/app.56545f7b.js" as="script"><link rel="preload" href="/assets/js/2.1a8508ed.js" as="script"><link rel="preload" href="/assets/js/12.cf02b182.js" as="script"><link rel="prefetch" href="/assets/js/10.6d835fb5.js"><link rel="prefetch" href="/assets/js/11.9ea11b12.js"><link rel="prefetch" href="/assets/js/13.b96945d8.js"><link rel="prefetch" href="/assets/js/14.adb64255.js"><link rel="prefetch" href="/assets/js/15.2535317c.js"><link rel="prefetch" href="/assets/js/16.2d259236.js"><link rel="prefetch" href="/assets/js/17.b5711ff1.js"><link rel="prefetch" href="/assets/js/18.11abdf9d.js"><link rel="prefetch" href="/assets/js/19.9cf09acb.js"><link rel="prefetch" href="/assets/js/20.7ebd6a10.js"><link rel="prefetch" href="/assets/js/21.266df251.js"><link rel="prefetch" href="/assets/js/22.d48e1b92.js"><link rel="prefetch" href="/assets/js/23.5430ccfd.js"><link rel="prefetch" href="/assets/js/24.0ec3a731.js"><link rel="prefetch" href="/assets/js/25.9c2e0df1.js"><link rel="prefetch" href="/assets/js/26.98436f52.js"><link rel="prefetch" href="/assets/js/27.0f03dd44.js"><link rel="prefetch" href="/assets/js/28.d2f519d1.js"><link rel="prefetch" href="/assets/js/29.8d2237c4.js"><link rel="prefetch" href="/assets/js/3.efe92163.js"><link rel="prefetch" href="/assets/js/30.d30ef4a1.js"><link rel="prefetch" href="/assets/js/31.2cfff275.js"><link rel="prefetch" href="/assets/js/32.e868d89a.js"><link rel="prefetch" href="/assets/js/33.737b1663.js"><link rel="prefetch" href="/assets/js/34.d1c073eb.js"><link rel="prefetch" href="/assets/js/35.da1187e6.js"><link rel="prefetch" href="/assets/js/36.c9175b48.js"><link rel="prefetch" href="/assets/js/37.d8c85e98.js"><link rel="prefetch" href="/assets/js/38.4c2e3abb.js"><link rel="prefetch" href="/assets/js/39.84dd9786.js"><link rel="prefetch" href="/assets/js/4.ba5c2cd7.js"><link rel="prefetch" href="/assets/js/40.50e789e4.js"><link rel="prefetch" href="/assets/js/41.48900aab.js"><link rel="prefetch" href="/assets/js/42.5356ec8a.js"><link rel="prefetch" href="/assets/js/43.132cdc78.js"><link rel="prefetch" href="/assets/js/44.e29a5b81.js"><link rel="prefetch" href="/assets/js/45.0b5c2cbf.js"><link rel="prefetch" href="/assets/js/46.33be0726.js"><link rel="prefetch" href="/assets/js/47.5d4be2a1.js"><link rel="prefetch" href="/assets/js/48.1e297779.js"><link rel="prefetch" href="/assets/js/49.801c295e.js"><link rel="prefetch" href="/assets/js/5.f0358cce.js"><link rel="prefetch" href="/assets/js/50.2fdbdf66.js"><link rel="prefetch" href="/assets/js/51.418414f4.js"><link rel="prefetch" href="/assets/js/6.c609fc90.js"><link rel="prefetch" href="/assets/js/7.725a5837.js"><link rel="prefetch" href="/assets/js/8.1b1a8ad4.js"><link rel="prefetch" href="/assets/js/9.b9eca668.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2c492a8d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LCS</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/" class="sidebar-heading clickable router-link-active open"><span>VUE们</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/vue/" class="sidebar-link">vue</a></li><li><a href="/vue/axios/" class="sidebar-link">axios</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>vue-cli</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/vue/vuepress/" class="sidebar-link">vuepress</a></li><li><a href="/vue/vuex/" class="sidebar-link">Vuex</a></li><li><a href="/vue/components/" class="sidebar-link">该造轮子了</a></li><li><a href="/vue/qiankun/" class="sidebar-link">乾坤</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/git/" class="active sidebar-link">git</a><ul class="sidebar-sub-headers"></ul></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/css/" class="sidebar-link">css</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodejs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/mongodb/" class="sidebar-heading clickable"><span>MongoDB</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/encryption" class="sidebar-heading clickable"><span>加密</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git"><a href="#git" class="header-anchor">#</a> git</h1> <h3 id="oh-my-zsh"><a href="#oh-my-zsh" class="header-anchor">#</a> oh-my-zsh</h3> <hr> <h3 id="查看配置信息"><a href="#查看配置信息" class="header-anchor">#</a> 查看配置信息</h3> <div class="language- extra-class"><pre class="language-text"><code>git config user.name
+git config user.email
+
+
+or
+
+git config --list
+
+</code></pre></div><h3 id="设置配置信息"><a href="#设置配置信息" class="header-anchor">#</a> 设置配置信息</h3> <div class="language- extra-class"><pre class="language-text"><code>git config --global user.name &quot;你的昵称&quot;
+git config --global user.email &quot;你的邮箱&quot;
+</code></pre></div><h3 id="修改配置信息"><a href="#修改配置信息" class="header-anchor">#</a> 修改配置信息</h3> <p>不能重复执行以上命令来重置配置信息</p> <ol><li>命令行修改配置</li></ol> <div class="language- extra-class"><pre class="language-text"><code>git config --global --replace-all user.name &quot;youerself name&quot;
+git config --global --replace-all user.email &quot;yourself email&quot;
+</code></pre></div><ol start="2"><li>修改配置文件
+windows下</li></ol> <div class="language- extra-class"><pre class="language-text"><code>C:\Users\administrator\.gitconfig
+
+[user]
+		name= lcsx
+		email=469572430@qq.com
+
+</code></pre></div><hr> <h3 id="永久记住密码"><a href="#永久记住密码" class="header-anchor">#</a> 永久记住密码</h3> <div class="language- extra-class"><pre class="language-text"><code>git config --global credential.helper store
+
+
+---
+
+也可在配置文件中添加
+[credential]
+			helper = store
+
+</code></pre></div><hr> <h3 id="创建一个ssh-key"><a href="#创建一个ssh-key" class="header-anchor">#</a> 创建一个ssh key</h3> <p>主目录里存在一个.ssh的文件夹，并且里面存有私钥文件，如果没有，我们可以通过ssh-keygen生成一份公钥与私钥</p> <div class="language- extra-class"><pre class="language-text"><code>~ ssh-keygen
+</code></pre></div><hr> <h4 id="查看生成的公钥命令"><a href="#查看生成的公钥命令" class="header-anchor">#</a> 查看生成的公钥命令</h4> <div class="language- extra-class"><pre class="language-text"><code>cat ~/.ssh/id_rsa.pub
+
+---
+添加公钥到git仓库中
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>1.git clone 
+
+本地修改
+
+仓库代码别人有修改
+
+本地欲拉取最新然后在commit    
+git pull发现报错
+
+
+本地master推送远程某分支
+
+
+-----
+本地master，修改后，切换别的分支。原来修改的是在切换后的分支里么
+
+-----
+
+
+
+经测试
+
+远程文件没有修改，而本地修改了，git pull 会正常拉取远程
+
+
+…or create a new repository on the command line
+echo &quot;# lcsblog&quot; &gt;&gt; README.md
+git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git remote add origin https://github.com/lcsx/lcsblog.git
+git push -u origin master
+                
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/lcsx/lcsblog.git
+git push -u origin master
+远程添加了文件，而本地没有的，git pull 会正常拉取
+远程文件修改了，本地的没有修改，git pull 会正常拉取远程
+
+远程修改文件，而本地同样也修改了，git pull会报错
+解决：
+1.git stash
+2.git pull
+3.git stash pop
+修改冲突，后可以git add .  git commit -m &quot;ccc&quot; git push
+
+git push 本地master到远程分支
+git push origin master:lcsdev
+
+
+
+//取消git add的文件
+git reset HEAD
+
+--soft  
+不删除工作空间改动代码，撤销commit，不撤销git add . 
+
+
+远程master增加文件，本地lcsdev pull也是看不到的。
+
+
+本地lcsdev 分支，运行git push 默认对送到远程lcsdev分支
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/python/flaskRestful/" class="prev">
+        flaskRestful
+      </a></span> <span class="next"><a href="/js/promise/">
+        promise
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.56545f7b.js" defer></script><script src="/assets/js/2.1a8508ed.js" defer></script><script src="/assets/js/12.cf02b182.js" defer></script>
+  </body>
+</html>

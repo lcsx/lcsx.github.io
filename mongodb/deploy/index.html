@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>部署与配置 | LCS</title>
+    <meta name="description" content="我的个人网站">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.jpg">
+  <script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?82f1d7da12a35266cc5d92a119c2a560";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+    
+    <link rel="preload" href="/assets/css/0.styles.2c492a8d.css" as="style"><link rel="preload" href="/assets/js/app.56545f7b.js" as="script"><link rel="preload" href="/assets/js/2.1a8508ed.js" as="script"><link rel="preload" href="/assets/js/4.ba5c2cd7.js" as="script"><link rel="prefetch" href="/assets/js/10.6d835fb5.js"><link rel="prefetch" href="/assets/js/11.9ea11b12.js"><link rel="prefetch" href="/assets/js/12.cf02b182.js"><link rel="prefetch" href="/assets/js/13.b96945d8.js"><link rel="prefetch" href="/assets/js/14.adb64255.js"><link rel="prefetch" href="/assets/js/15.2535317c.js"><link rel="prefetch" href="/assets/js/16.2d259236.js"><link rel="prefetch" href="/assets/js/17.b5711ff1.js"><link rel="prefetch" href="/assets/js/18.11abdf9d.js"><link rel="prefetch" href="/assets/js/19.9cf09acb.js"><link rel="prefetch" href="/assets/js/20.7ebd6a10.js"><link rel="prefetch" href="/assets/js/21.266df251.js"><link rel="prefetch" href="/assets/js/22.d48e1b92.js"><link rel="prefetch" href="/assets/js/23.5430ccfd.js"><link rel="prefetch" href="/assets/js/24.0ec3a731.js"><link rel="prefetch" href="/assets/js/25.9c2e0df1.js"><link rel="prefetch" href="/assets/js/26.98436f52.js"><link rel="prefetch" href="/assets/js/27.0f03dd44.js"><link rel="prefetch" href="/assets/js/28.d2f519d1.js"><link rel="prefetch" href="/assets/js/29.8d2237c4.js"><link rel="prefetch" href="/assets/js/3.efe92163.js"><link rel="prefetch" href="/assets/js/30.d30ef4a1.js"><link rel="prefetch" href="/assets/js/31.2cfff275.js"><link rel="prefetch" href="/assets/js/32.e868d89a.js"><link rel="prefetch" href="/assets/js/33.737b1663.js"><link rel="prefetch" href="/assets/js/34.d1c073eb.js"><link rel="prefetch" href="/assets/js/35.da1187e6.js"><link rel="prefetch" href="/assets/js/36.c9175b48.js"><link rel="prefetch" href="/assets/js/37.d8c85e98.js"><link rel="prefetch" href="/assets/js/38.4c2e3abb.js"><link rel="prefetch" href="/assets/js/39.84dd9786.js"><link rel="prefetch" href="/assets/js/40.50e789e4.js"><link rel="prefetch" href="/assets/js/41.48900aab.js"><link rel="prefetch" href="/assets/js/42.5356ec8a.js"><link rel="prefetch" href="/assets/js/43.132cdc78.js"><link rel="prefetch" href="/assets/js/44.e29a5b81.js"><link rel="prefetch" href="/assets/js/45.0b5c2cbf.js"><link rel="prefetch" href="/assets/js/46.33be0726.js"><link rel="prefetch" href="/assets/js/47.5d4be2a1.js"><link rel="prefetch" href="/assets/js/48.1e297779.js"><link rel="prefetch" href="/assets/js/49.801c295e.js"><link rel="prefetch" href="/assets/js/5.f0358cce.js"><link rel="prefetch" href="/assets/js/50.2fdbdf66.js"><link rel="prefetch" href="/assets/js/51.418414f4.js"><link rel="prefetch" href="/assets/js/6.c609fc90.js"><link rel="prefetch" href="/assets/js/7.725a5837.js"><link rel="prefetch" href="/assets/js/8.1b1a8ad4.js"><link rel="prefetch" href="/assets/js/9.b9eca668.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2c492a8d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LCS</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/" class="sidebar-heading clickable router-link-active"><span>VUE们</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/vue/" class="sidebar-link">vue</a></li><li><a href="/vue/axios/" class="sidebar-link">axios</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>vue-cli</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/vue/vuepress/" class="sidebar-link">vuepress</a></li><li><a href="/vue/vuex/" class="sidebar-link">Vuex</a></li><li><a href="/vue/components/" class="sidebar-link">该造轮子了</a></li><li><a href="/vue/qiankun/" class="sidebar-link">乾坤</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/git/" class="sidebar-link">git</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/css/" class="sidebar-link">css</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodejs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/mongodb/" class="sidebar-heading clickable router-link-active open"><span>MongoDB</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/mongodb/install/" class="sidebar-link">安装</a></li><li><a href="/mongodb/jwt/" class="sidebar-link">jsonwebtoken</a></li><li><a href="/mongodb/upload/" class="sidebar-link">上传文件</a></li><li><a href="/mongodb/schema/" class="sidebar-link">Schema</a></li><li><a href="/mongodb/Schema.Types.ObjectId.objectById/" class="sidebar-link">Schema.Types.ObjectId.objectById</a></li><li><a href="/mongodb/deploy/" class="active sidebar-link">部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mongodb/deploy/#pm2管理进程" class="sidebar-link">pm2管理进程</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/encryption" class="sidebar-heading clickable"><span>加密</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="部署与配置"><a href="#部署与配置" class="header-anchor">#</a> 部署与配置</h1> <p>SSH 登录服务器
+买云服务器后，会给你一个公网Ip、用户名、密码，就可以用ssh登录了</p> <p>安装git，下载代码到服务器
+安装node.js</p> <p>登录
+本机git bash：</p> <div class="language- extra-class"><pre class="language-text"><code>$ ssh root@39.97.xx.ip
+//在输入密码 就登录上了
+
+//安装乌班图git
+app-get install git
+
+//从git clone 程序包
+git clone http://sssssssssss.git
+
+//查看文件目录
+$ ls 
+[比如现在有文件 restful-nodejs   zhihu-api]
+
+//可以删除不要的  
+$ rm -rf rest*
+
+$ cd zhihu*
+
+//安装nodejs
+//https://github.com/nodesource/distributions/blob/master/README.md
+//sudo 管理员权限
+curl -sL https://rpm.nodesource.com/setup_11.x | bash -
+sudo apt-get install -y nodejs
+
+//安装依赖
+npm i
+
+//运行程序
+node app
+
+</code></pre></div><p>程序写的时候运行在3000端口，但服务器基于安全考虑，对外暴露的端口比较少，有80，有334，不改代码端口怎么正常运行呢？用nginx</p> <h4 id="nginx"><a href="#nginx" class="header-anchor">#</a> nginx</h4> <p>反向代理工具，把外网的80端口转到内网的3000端口</p> <div class="language-shell extra-class"><pre class="language-shell"><code>// 安装nginx
+$ <span class="token function">apt-get</span> <span class="token function">install</span> nginx
+
+//如何配置nginx 告诉你配置文件在哪里的
+$ nginx -t
+//返回一些信息 包括配置文库目录  /etc/nginx/nginx.conf
+
+//编辑配置文件
+<span class="token function">vim</span> /etc/nginx/nginx.cofg
+
+//改什么好呢
+//先注释掉默认的80端口配置
+<span class="token comment"># include /etc/nginx/sites-enabled/*</span>
+//添加80端口转发
+server<span class="token punctuation">{</span>
+	listen <span class="token number">80</span><span class="token punctuation">;</span>
+	server_name localhost<span class="token punctuation">;</span>
+	location / <span class="token punctuation">{</span>
+		proxy_pass http://127.0.0.1:3000
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+//保存并退出
+:wq
+//只退出是q
+
+
+//最好先检测下配置ok不ok,语法对不对
+$ nginx -t
+
+//如何让配置生效 
+//1.重启nginx
+$ <span class="token punctuation">[</span>sudo<span class="token punctuation">]</span> <span class="token function">service</span> nginx restart
+
+//2.
+<span class="token number">2</span>.service nginx reload
+
+
+//搞定
+</code></pre></div><h4 id="postman设置host"><a href="#postman设置host" class="header-anchor">#</a> postman设置host</h4> <p>接口在远程服务器上了，那本地postman的怎么来测试呢？
+postman的接口地址都是localhost:3000 ，可以设置环境变量来将host统一切换</p> <p>设置--&gt; Add Environment</p> <h3 id="精美的接口文档"><a href="#精美的接口文档" class="header-anchor">#</a> 精美的接口文档</h3> <p>caocaocao吊炸天/就是有点慢
+<img src="/assets/img/01.a80f4a36.png" alt="An image"></p> <h2 id="pm2管理进程"><a href="#pm2管理进程" class="header-anchor">#</a> pm2管理进程</h2> <p>当我本地关掉gitbash 的时候，我x咧，服务器的node服务也停了~~~！
+如何使程序在后台不停运行呢-------pm2管理进程</p> <p>我们要做的内容有</p> <ol><li>安装PM2</li> <li>使用pm2启动、停止、重启、重载程序</li> <li>使用pm2的日志、环境变量管理功能</li></ol> <div class="language- extra-class"><pre class="language-text"><code>//bash 登录到远程服务器后  cd 到zhihu* 
+
+//安装
+npm i pm2 -g
+
+//运行
+pm2 start app
+
+//如何停止
+//pm2 stop 名称
+
+pm2 stop app
+//关掉所有
+pm2 stop all 
+
+//如何知道名称
+pm2 ls
+
+//重启    这个重启是会终端服务的
+pm2 restart app
+
+//不间断重启
+pm2 reload app
+
+//添加环境变量
+NODE_ENV=PRODUCTION pm2 start app --update-env
+
+这个就是
+&quot;scripts&quot;: {
+    &quot;start&quot;: &quot;cros-env NODE_ENV=production node app&quot;,
+    &quot;dev&quot;: &quot;nodemon app&quot;
+},
+
+
+//查看日志
+pm2 log  app
+
+//将日期时间，在日志中能显示，怎么办
+NODE_ENV=PRODUCTION pm2 start app --update-env --log-date-formate &quot;YYYY-MM-DD HH:mm&quot;
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mongodb/Schema.Types.ObjectId.objectById/" class="prev">
+        Schema.Types.ObjectId.objectById
+      </a></span> <span class="next"><a href="/encryption/Hash/">
+        Hash
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.56545f7b.js" defer></script><script src="/assets/js/2.1a8508ed.js" defer></script><script src="/assets/js/4.ba5c2cd7.js" defer></script>
+  </body>
+</html>

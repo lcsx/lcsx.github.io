@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VUE | LCS</title>
+    <meta name="description" content="我的个人网站">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.jpg">
+  <script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?82f1d7da12a35266cc5d92a119c2a560";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+    
+    <link rel="preload" href="/assets/css/0.styles.2c492a8d.css" as="style"><link rel="preload" href="/assets/js/app.56545f7b.js" as="script"><link rel="preload" href="/assets/js/2.1a8508ed.js" as="script"><link rel="preload" href="/assets/js/48.1e297779.js" as="script"><link rel="prefetch" href="/assets/js/10.6d835fb5.js"><link rel="prefetch" href="/assets/js/11.9ea11b12.js"><link rel="prefetch" href="/assets/js/12.cf02b182.js"><link rel="prefetch" href="/assets/js/13.b96945d8.js"><link rel="prefetch" href="/assets/js/14.adb64255.js"><link rel="prefetch" href="/assets/js/15.2535317c.js"><link rel="prefetch" href="/assets/js/16.2d259236.js"><link rel="prefetch" href="/assets/js/17.b5711ff1.js"><link rel="prefetch" href="/assets/js/18.11abdf9d.js"><link rel="prefetch" href="/assets/js/19.9cf09acb.js"><link rel="prefetch" href="/assets/js/20.7ebd6a10.js"><link rel="prefetch" href="/assets/js/21.266df251.js"><link rel="prefetch" href="/assets/js/22.d48e1b92.js"><link rel="prefetch" href="/assets/js/23.5430ccfd.js"><link rel="prefetch" href="/assets/js/24.0ec3a731.js"><link rel="prefetch" href="/assets/js/25.9c2e0df1.js"><link rel="prefetch" href="/assets/js/26.98436f52.js"><link rel="prefetch" href="/assets/js/27.0f03dd44.js"><link rel="prefetch" href="/assets/js/28.d2f519d1.js"><link rel="prefetch" href="/assets/js/29.8d2237c4.js"><link rel="prefetch" href="/assets/js/3.efe92163.js"><link rel="prefetch" href="/assets/js/30.d30ef4a1.js"><link rel="prefetch" href="/assets/js/31.2cfff275.js"><link rel="prefetch" href="/assets/js/32.e868d89a.js"><link rel="prefetch" href="/assets/js/33.737b1663.js"><link rel="prefetch" href="/assets/js/34.d1c073eb.js"><link rel="prefetch" href="/assets/js/35.da1187e6.js"><link rel="prefetch" href="/assets/js/36.c9175b48.js"><link rel="prefetch" href="/assets/js/37.d8c85e98.js"><link rel="prefetch" href="/assets/js/38.4c2e3abb.js"><link rel="prefetch" href="/assets/js/39.84dd9786.js"><link rel="prefetch" href="/assets/js/4.ba5c2cd7.js"><link rel="prefetch" href="/assets/js/40.50e789e4.js"><link rel="prefetch" href="/assets/js/41.48900aab.js"><link rel="prefetch" href="/assets/js/42.5356ec8a.js"><link rel="prefetch" href="/assets/js/43.132cdc78.js"><link rel="prefetch" href="/assets/js/44.e29a5b81.js"><link rel="prefetch" href="/assets/js/45.0b5c2cbf.js"><link rel="prefetch" href="/assets/js/46.33be0726.js"><link rel="prefetch" href="/assets/js/47.5d4be2a1.js"><link rel="prefetch" href="/assets/js/49.801c295e.js"><link rel="prefetch" href="/assets/js/5.f0358cce.js"><link rel="prefetch" href="/assets/js/50.2fdbdf66.js"><link rel="prefetch" href="/assets/js/51.418414f4.js"><link rel="prefetch" href="/assets/js/6.c609fc90.js"><link rel="prefetch" href="/assets/js/7.725a5837.js"><link rel="prefetch" href="/assets/js/8.1b1a8ad4.js"><link rel="prefetch" href="/assets/js/9.b9eca668.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.2c492a8d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LCS</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/" class="sidebar-heading clickable router-link-active open"><span>VUE们</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue/vue/" class="active sidebar-link">vue</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/vue/axios/" class="sidebar-link">axios</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>vue-cli</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/vue/vuepress/" class="sidebar-link">vuepress</a></li><li><a href="/vue/vuex/" class="sidebar-link">Vuex</a></li><li><a href="/vue/components/" class="sidebar-link">该造轮子了</a></li><li><a href="/vue/qiankun/" class="sidebar-link">乾坤</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>python</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/git/" class="sidebar-link">git</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/css/" class="sidebar-link">css</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodejs</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/mongodb/" class="sidebar-heading clickable"><span>MongoDB</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/encryption" class="sidebar-heading clickable"><span>加密</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue"><a href="#vue" class="header-anchor">#</a> VUE</h1> <h3 id="directive-指令"><a href="#directive-指令" class="header-anchor">#</a> directive 指令</h3> <p>通过指令red使helloworld下面的字都变红</p> <div class="language-js extra-class"><pre class="language-js"><code>Vue<span class="token punctuation">.</span><span class="token function">directive</span><span class="token punctuation">(</span><span class="token string">'make-red'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+	<span class="token function">inserted</span><span class="token punctuation">(</span><span class="token parameter">el</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		el<span class="token punctuation">.</span>style<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token string">'red'</span><span class="token punctuation">;</span>
+		<span class="token comment">//console.log(el.getAttribute('p1'))</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//main.js中引入</span>
+<span class="token keyword">import</span> <span class="token string">'./xx.js'</span>
+
+
+<span class="token comment">//在template中使用  v-make-red</span>
+<span class="token operator">&lt;</span>h1 v<span class="token operator">-</span>make<span class="token operator">-</span>red<span class="token operator">&gt;</span>lcs<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+</code></pre></div><h3 id="proxy"><a href="#proxy" class="header-anchor">#</a> proxy</h3> <p>简单的mock以及代理</p> <p>mock文件夹下user.json
+cd 到mock文件夹，运行 http-server .</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//vue.config.js</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+	devServer<span class="token operator">:</span><span class="token punctuation">{</span>
+		proxy<span class="token operator">:</span><span class="token punctuation">{</span>
+			<span class="token string">'./user'</span><span class="token operator">:</span><span class="token punctuation">{</span>
+				target<span class="token operator">:</span><span class="token string">'http:localhost:xxxx'</span><span class="token punctuation">,</span>
+				pathRewrite<span class="token operator">:</span><span class="token punctuation">{</span>
+					<span class="token string">'/user'</span><span class="token operator">:</span><span class="token string">'user.json'</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="es6结构赋值"><a href="#es6结构赋值" class="header-anchor">#</a> es6结构赋值</h3> <p>嵌套的结构赋值的使用</p> <div class="language- extra-class"><pre class="language-text"><code>const {data:{list}} = await axios.get('xxx')
+</code></pre></div><h3 id="vue中使用js-proxy"><a href="#vue中使用js-proxy" class="header-anchor">#</a> vue中使用js proxy</h3> <p>升序/降序/重置</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">async</span> <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">const</span> <span class="token punctuation">{</span>data<span class="token operator">:</span><span class="token punctuation">{</span>price<span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/.xx'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">//双重保险 1.冷冻对象 Object.freeze(obj)  2.proxy代理 源数据不能改变了</span>
+	Object<span class="token punctuation">.</span><span class="token function">freeze</span><span class="token punctuation">(</span>price<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	<span class="token keyword">this</span><span class="token punctuation">.</span>proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+		<span class="token keyword">get</span><span class="token punctuation">(</span>target<span class="token punctuation">,</span>key<span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span>key<span class="token operator">==</span><span class="token string">'up'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>price<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>a<span class="token operator">-</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>key<span class="token operator">==</span><span class="token string">'down'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>price<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>b<span class="token operator">-</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+				<span class="token keyword">return</span> price<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token keyword">set</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token boolean">false</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	
+	<span class="token keyword">this</span><span class="token punctuation">.</span>$data<span class="token punctuation">.</span>price <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>proxy<span class="token punctuation">.</span>default<span class="token punctuation">;</span>
+					 <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>proxy<span class="token punctuation">.</span>up<span class="token punctuation">;</span>
+					 <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>proxy<span class="token punctuation">.</span>down<span class="token punctuation">;</span>
+					 
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="自定义遍历"><a href="#自定义遍历" class="header-anchor">#</a> 自定义遍历</h3> <p>后端传过来的值，不会直接是一个可遍历的数组 for of 不方便使用，for in 又不是我想要的结果</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> lcs <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token string">'p1'</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token string">'p2'</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token string">'p3'</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span> 
+<span class="token comment">//想  &lt;li v-for = () in [1,2,3,4,5] &gt;{{item}}&lt;/li&gt;</span>
+</code></pre></div><h3 id="v-model"><a href="#v-model" class="header-anchor">#</a> v-model</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>input v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">&quot;searchText&quot;</span><span class="token operator">&gt;</span>
+</code></pre></div><p>等价于：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>input
+  v<span class="token operator">-</span>bind<span class="token operator">:</span>value<span class="token operator">=</span><span class="token string">&quot;searchText&quot;</span>
+  v<span class="token operator">-</span>on<span class="token operator">:</span>input<span class="token operator">=</span><span class="token string">&quot;searchText = $event.target.value&quot;</span>
+<span class="token operator">&gt;</span>
+</code></pre></div><p>在组件中</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;custom-input
+  v-bind:value=&quot;searchText&quot;
+  v-on:input=&quot;searchText = $event&quot;
+&gt;&lt;/custom-input&gt;
+</code></pre></div><p>使用</p> <div class="language-npm extra-class"><pre class="language-text"><code>&lt;template&gt;
+	&lt;div class=&quot;hello&quot;&gt;
+		&lt;h1&gt;{{ msg }}&lt;/h1&gt;
+		&lt;input type=&quot;text&quot; v-model=&quot;lcsvalue&quot;&gt;
+		&lt;hr&gt;
+		&lt;lcs1 v-model=&quot;lcsvalue&quot;&gt;&lt;/lcs1&gt;
+		&lt;h1&gt;{{lcsvalue}}&lt;/h1&gt;
+	&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+	import lcs1 from './lcs1.vue'
+	export default {
+		name: 'HelloWorld',
+		components: {
+			lcs1
+		},
+		props: {
+			msg: String
+		},
+		data() {
+			return {
+				lcsvalue: 0
+			}
+		}
+	}
+&lt;/script&gt;
+</code></pre></div><p>lcs1.vue</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;template&gt;
+	&lt;div&gt;
+		&lt;input v-bind:value=&quot;value&quot; ref=&quot;lcsinput&quot;&gt;
+		&lt;ul&gt;
+			&lt;li v-for=&quot;(item,index) in value&quot; @click=&quot;chan(item)&quot;&gt;{{item,index}}&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+	export default {
+		props: ['value'],
+		data() {
+			return {
+
+			}
+		},
+		methods: {
+			chan(item){
+				console.log(this.$refs.lcsinput.value)
+				this.$emit('input', item)
+			}
+		},
+		watch: {
+			value: (newVal, oldVal) =&gt; {
+				console.log(newVal);
+
+			}
+		}
+	}
+&lt;/script&gt;
+</code></pre></div><h3 id="插槽-solt"><a href="#插槽-solt" class="header-anchor">#</a> 插槽 solt</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;navigation-link url=&quot;/profile&quot;&gt;
+  Your Profile
+&lt;/navigation-link&gt;
+
+&lt;a
+  v-bind:href=&quot;url&quot;
+  class=&quot;nav-link&quot;
+&gt;
+  &lt;slot&gt;&lt;/slot&gt;
+&lt;/a&gt;
+
+</code></pre></div><p>具名插槽</p> <div class="language- extra-class"><pre class="language-text"><code>//组件
+&lt;div class=&quot;container&quot;&gt;
+  &lt;header&gt;
+    &lt;slot name=&quot;header&quot;&gt;&lt;/slot&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;slot&gt;&lt;/slot&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;
+    &lt;slot name=&quot;footer&quot;&gt;&lt;/slot&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>//引用的时候
+&lt;base-layout&gt;
+  &lt;template v-slot:header&gt;
+    &lt;h1&gt;Here might be a page title&lt;/h1&gt;
+  &lt;/template&gt;
+
+  &lt;p&gt;A paragraph for the main content.&lt;/p&gt;
+  &lt;p&gt;And another one.&lt;/p&gt;
+
+  &lt;template v-slot:footer&gt;
+    &lt;p&gt;Here's some contact info&lt;/p&gt;
+  &lt;/template&gt;
+&lt;/base-layout&gt;
+</code></pre></div><p>*** 2020/06/30 ***</p> <h3 id="异步加载组件"><a href="#异步加载组件" class="header-anchor">#</a> 异步加载组件</h3> <p>Vue实现按需加载，官方推荐使用结合webpack的代码分割功能进行。定义为异步加载的组件，在打包的时候，会打包成单独的js文件存储在static/js文件夹里面，在调用时使用ajax请求回来插入到html中。</p> <p>从组件的使用方式来将，可以有：直接渲染异步组件和路由异步组件；而直接渲染异步组件一般是通过component的 is 属性和v-if来动态切换实现。</p> <h4 id="直接渲染异步组件"><a href="#直接渲染异步组件" class="header-anchor">#</a> 直接渲染异步组件</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> asyncLoading <span class="token keyword">from</span> <span class="token string">'./componentss/async-loading-component.vue'</span>
+<span class="token keyword">import</span> asyncError <span class="token keyword">from</span> <span class="token string">'./componentss/async-error-component.vue'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'async-webpack-example-c'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 这个特殊的 `require` 语法将会告诉 webpack</span>
+  <span class="token comment">// 自动将你的构建代码切割成多个包，这些包</span>
+  <span class="token comment">// 会通过 Ajax 请求加载</span>
+  <span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'./componentss/async-component-c.vue'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> resolve<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>
+  <span class="token string">'async-webpack-example-d'</span><span class="token punctuation">,</span>
+  <span class="token comment">// 这个 `import` 函数会返回一个 `Promise` 对象。</span>
+  <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./componentss/async-component-d.vue'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">AsyncComponentA</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">// 需要加载的组件 (应该是一个 `Promise` 对象)</span>
+  component<span class="token operator">:</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./componentss/async-component-a.js'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token comment">// 异步组件加载时使用的组件</span>
+  loading<span class="token operator">:</span> asyncLoading<span class="token punctuation">,</span>
+  <span class="token comment">// 加载失败时使用的组件</span>
+  error<span class="token operator">:</span> asyncError<span class="token punctuation">,</span>
+  <span class="token comment">// 展示加载时组件的延时时间。默认值是 200 (毫秒)</span>
+  <span class="token comment">// delay时间之后开开始加载并显示loading组件效果</span>
+  delay<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+  <span class="token comment">// 如果提供了超时时间且组件加载也超时了，</span>
+  <span class="token comment">// 则使用加载失败时使用的组件。默认值是：`Infinity`</span>
+  timeout<span class="token operator">:</span> <span class="token number">15000</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// 也可注册局部组件</span>
+<span class="token punctuation">{</span><span class="token operator">...</span>
+    components<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'aync-component-b'</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./componentss/async-component-b.js'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>可以使用v-if和component/is来切换使用，这里使用is特性为例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;demo-item-group&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li v<span class="token operator">-</span><span class="token keyword">for</span><span class="token operator">=</span><span class="token string">&quot;item of comptIsNames&quot;</span> <span class="token operator">:</span>key<span class="token operator">=</span><span class="token string">&quot;item&quot;</span> @click<span class="token operator">=</span><span class="token string">&quot;curComponentName = item&quot;</span>
+            <span class="token operator">:</span><span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;{active: curComponentName === item}&quot;</span><span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>component <span class="token operator">:</span>is<span class="token operator">=</span><span class="token string">&quot;curComponentName&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>component<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'basic-async-component'</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      showCcc<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      comptIsNames<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'async-webpack-example-c'</span><span class="token punctuation">,</span> <span class="token string">'async-webpack-example-d'</span><span class="token punctuation">,</span> <span class="token string">'aync-component-b'</span><span class="token punctuation">,</span><span class="token string">'aync-component-a'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      curComponentName<span class="token operator">:</span> <span class="token string">'global-compt-1'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'aync-component-b'</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./componentss/async-component-b.js'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token string">'aync-component-a'</span><span class="token operator">:</span> AsyncComponentA
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><p>对上述AsyncComponentA还可以封装下，使component: import('./componentss/async-component-a.js'),不写死</p> <div class="language-js extra-class"><pre class="language-js"><code>	<span class="token keyword">import</span> lcs2 <span class="token keyword">from</span> <span class="token string">'./lcs2.vue'</span>
+	
+	<span class="token keyword">const</span> later3 <span class="token operator">=</span> Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'later3'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	        <span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'./later3.vue'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> resolve<span class="token punctuation">)</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">4000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	<span class="token keyword">const</span> <span class="token function-variable function">loazyLoadCompoent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">asyncComponent</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		<span class="token keyword">const</span> <span class="token function-variable function">AsyncHandler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+			component<span class="token operator">:</span>asyncComponent<span class="token punctuation">,</span>
+			loading<span class="token operator">:</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@/components/LoadingComponent.vue'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">,</span>
+			error<span class="token operator">:</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@/components/ErrorComponent.vue'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">,</span>
+			delay<span class="token operator">:</span><span class="token number">2000</span><span class="token punctuation">,</span>
+			timeout<span class="token operator">:</span><span class="token number">10000</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+			functional<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h<span class="token punctuation">,</span><span class="token punctuation">{</span>data<span class="token punctuation">,</span>children<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span>AsyncHandler<span class="token punctuation">,</span>data<span class="token punctuation">,</span>children<span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		name<span class="token operator">:</span> <span class="token string">'basic-async-component'</span><span class="token punctuation">,</span>
+		components<span class="token operator">:</span><span class="token punctuation">{</span>
+			lcs2<span class="token punctuation">,</span>
+			<span class="token function-variable function">lcs3</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token function">loazyLoadCompoent</span><span class="token punctuation">(</span><span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'@/components/lcs3.vue'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span>
+				lcs<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'lcs3'</span><span class="token punctuation">,</span><span class="token string">'lcs2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+				curComp<span class="token operator">:</span><span class="token string">'lcs2'</span><span class="token punctuation">,</span>
+				<span class="token function-variable function">later</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'./later.vue'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> resolve<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+				<span class="token function-variable function">later2</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+				    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				        <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'./later2.vue'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>resolve<span class="token punctuation">)</span>
+				    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				later3<span class="token punctuation">,</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		
+	<span class="token punctuation">}</span>
+</code></pre></div><p>是不是觉得调用的时候还挺麻烦，import一堆，直接传字符串不香么？</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">'@/views/aa.vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">cc</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>但事与愿违，webpack打包时不认识你这样的
+webpack的现在的实现方式不能实现完全动态</p> <p>需要</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> <span class="token function-variable function">lcs</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+ <span class="token keyword">return</span>  <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token operator">/</span>path<span class="token operator">/</span>$<span class="token punctuation">{</span>path<span class="token punctuation">}</span><span class="token punctuation">.</span>vue<span class="token punctuation">)</span>	
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>所以我们可以改造上面的例子</p> <div class="language-js extra-class"><pre class="language-js"><code>	<span class="token keyword">const</span> <span class="token function-variable function">loazyLoadCompoent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		<span class="token keyword">const</span> <span class="token function-variable function">AsyncHandler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+			component<span class="token operator">:</span><span class="token keyword">import</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">@/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>path<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+			loading<span class="token operator">:</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@/components/LoadingComponent.vue'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">,</span>
+			error<span class="token operator">:</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@/components/ErrorComponent.vue'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>default<span class="token punctuation">,</span>
+			delay<span class="token operator">:</span><span class="token number">2000</span><span class="token punctuation">,</span>
+			timeout<span class="token operator">:</span><span class="token number">10000</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+			functional<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h<span class="token punctuation">,</span><span class="token punctuation">{</span>data<span class="token punctuation">,</span>children<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span>AsyncHandler<span class="token punctuation">,</span>data<span class="token punctuation">,</span>children<span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	
+	<span class="token operator">...</span>
+	<span class="token function-variable function">lcs3</span><span class="token operator">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token function">loazyLoadCompoent</span><span class="token punctuation">(</span><span class="token string">'components/lcs3.vue'</span><span class="token punctuation">)</span>
+	
+	<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+
+#### 路由异步组件
+普通异步组件的路由懒加载
+</span><span class="token template-punctuation string">`</span></span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span> js
+<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> redirect<span class="token operator">:</span> <span class="token string">'/hello'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> 
+    path<span class="token operator">:</span> <span class="token string">'/hello'</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'@/components/hello'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>高级异步组件的路由懒加载</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> asyncLoading <span class="token keyword">from</span> <span class="token string">'@/components/vc-cat/vc-async-loading.vue'</span>
+<span class="token keyword">import</span> asyncError <span class="token keyword">from</span> <span class="token string">'@/components/vc-cat/vc-async-error.vue'</span>
+
+<span class="token keyword">function</span> <span class="token function">lazyLoadView</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">asyncComponentForm</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    component<span class="token operator">:</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token string">'@/components/hello/hello-form'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    loading<span class="token operator">:</span> asyncLoading<span class="token punctuation">,</span>
+    error<span class="token operator">:</span> asyncError<span class="token punctuation">,</span>
+    delay<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+    timeout<span class="token operator">:</span> <span class="token number">8000</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    functional<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token function">render</span> <span class="token punctuation">(</span><span class="token parameter">h<span class="token punctuation">,</span> <span class="token punctuation">{</span>data<span class="token punctuation">,</span> children<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span>asyncComponentForm<span class="token punctuation">,</span> data<span class="token punctuation">,</span> children<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> 
+    path<span class="token operator">:</span> <span class="token string">'/form'</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">lazyLoadView</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>同样，可以在lazyLoadView传参，需修改函数</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>异步组件在调用时，是以ajax获取，二次渲染在页面上的。所以加载异步组件的时候，在network项对显示对应加载的js</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/vue/axios/">
+        axios
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.56545f7b.js" defer></script><script src="/assets/js/2.1a8508ed.js" defer></script><script src="/assets/js/48.1e297779.js" defer></script>
+  </body>
+</html>
